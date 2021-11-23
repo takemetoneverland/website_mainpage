@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>6Sense 식스센스 캠핑장</title>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <!--헤더-->
+        <header>
+            <!--로고-->
+            <div id="logo">
+                <a href="index.html"><i class="fas fa-campground"><span>6Sense</span></i></a>             
+            </div>
+            
+            <!--네비게이션-->
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#">캠핑장소개 <span></span></a>
+                        <ul>
+                            <li><a href="#">식스센스</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">예약하기 <span></span></a>
+                        <ul>
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">캠핑 구역 안내</a></li>
+                            <li><a href="#">가격 안내</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="#">갤러리</a></li>
+                        <li><a href="#">문의하기</a></li>
+                </ul>            
+            </nav>
+        </header>
+
+        <!--이미지 슬라이드 쇼-->
+        <div id="slideShow">
+            <div id="slides">
+                <img src="images/1.jpg" alt="">
+                <img src="images/2.jpg" alt="">
+                <img src="images/3.jpg" alt="">
+                <img src="images/4.jpg" alt="">
+                <img src="images/5.jpg" alt="">
+                <img src="images/6.jpg" alt="">
+                <!-- 버튼 삭제하고 자동 슬라이드로 변경함 2021.11.22 -->
+                <!-- <button id="prev">&lang;</button>
+                <button id="next">&rang;</button> -->
+            </div>
+        </div>
+
+        <!--콘텐츠-->
+        <div id="contents">
+            <!--탭 메뉴-->
+            <div id="tabMenu">
+                <input type="radio" id="tab1" name="tabs" checked>
+                <label for="tab1">공지사항</label>
+                <input type="radio" id="tab2" name="tabs">
+                <label for="tab2">갤러리</label>
+
+                <div id="notice" class="tabContent">
+                    <h2>공지사항 내용</h2>
+                    <ul>
+                        <li>동계 난로 대여 안내</li>
+                        <li>취소/환불 안내</li>                       
+                        <li>캠핑장 이용 수칙</li>
+                    </ul>
+                </div>
+                <div id="gallery" class="tabContent">
+                    <h2>갤러리 내용</h2>
+                    <ul>
+                        <li><img src="images/1.jpg"></li>
+                        <li><img src="images/2.jpg"></li>
+                        <li><img src="images/3.jpg"></li>
+                        <li><img src="images/4.jpg"></li>
+                        <li><img src="images/5.jpg"></li>
+                        <li><img src="images/6.jpg"></li>
+                        <li><img src="images/8.jpg"></li>
+                        <li><img src="images/9.jpg"></li>
+                        <li><img src="images/10.jpg"></li>
+                        <li><img src="images/11.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+              
+            <!--퀵 링크-->
+            <div id="links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon1"><i class="fas fa-campground"></i></span>
+                            <p>시설 안내</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon2"><i class="far fa-calendar-alt"></i></span>
+                            <p>예약하기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon3"><i class="fas fa-map-marker-alt"></i></span>
+                            <p>오시는 길</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--푸터-->
+        <footer>
+            <div id="bottomMenu">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>                    
+                </ul>
+                <div id="sns">
+                    <ul>
+                        <li><a href="#"><img src="icons/facebook.png" alt="facebook" title="식스센스 페이스북"></a></li>
+                        <li><a href="#"><img src="icons/instagram.png" alt="instagram" title="식스센스 인스타그램"></a></li>
+                        <li><a href="#"><img src="icons/naver.png" alt="naverblog" title="식스센스 블로그"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="company">
+                <h4>상호명 : 식스센스</h4>
+                <p>경기 가평군 설악면 자잠로1004번길 1004 (대표전화) 123-456-7890</p>
+                <p>대표 : 정다은</p>
+                <p>통신판매업신고번호 : 제2021-경기가평-1004호</p>
+                <p>COPYRIGHT 6Sense. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="autoslideshow.js"></script>
+
+    <!-- 버튼 클릭 이미지 슬라이드 삭제함 2021.11.22 -->
+    <!-- <script src="slideshow.js"></script> -->
+</body>
+</html>
